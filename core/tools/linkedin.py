@@ -12,7 +12,7 @@ def scrape_linkedin_profile(*, linkedin_profile_url: str, mock: bool = False):
     """
     
     if mock:
-        linkedin_profile_url = "https://gist.githubusercontent.com/FelipeSaadi/64faf209be21f0ee80932b6cd80c328a/raw/5216620a62a423c06e3c417f1d10eeff45fa2313/felipe-saadi.json"
+        linkedin_profile_url = "https://gist.githubusercontent.com/FelipeSaadi/64faf209be21f0ee80932b6cd80c328a/raw/8f9855271f1f3c7938fddde054c2ac40414741b7/felipe-saadi.json"
         
         response = requests.get(linkedin_profile_url, timeout=10)
     else:

@@ -6,13 +6,15 @@ authors = ["Felipe Saadi <felipesaadisiegert@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.12"
 langchain = "^0.3.7"
 langchain-community = "^0.3.7"
 langchainhub = "^0.1.21"
 python-dotenv = "^1.0.1"
 langchain-openai = "^0.2.9"
 langchain-anthropic = "^0.3.0"
+pydantic = "^2.10.0"
+flask = "^3.1.0"
 
 
 [build-system]

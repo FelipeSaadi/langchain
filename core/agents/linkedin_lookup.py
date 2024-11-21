@@ -8,16 +8,19 @@ from langchain.agents import (
 )
 from langchain import hub
 from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import PromptTemplate
 from core.tools.linkedin import get_profile_url_tavily
 
 dotenv.load_dotenv()
 
 def lookup(name: str) -> str:
-    llm = ChatOpenAI(
-        temperature=0,
-        model_name="gpt-4o-mini"
-    )
+    # llm = ChatOpenAI(
+    #     temperature=0,
+    #     model_name="gpt-4o-mini"
+    # )
+    
+    llm = ChatAnthropic(model_name="claude-3-5-haiku-20241022")
     
     template = """
     given the full name {name_of_person} I want you to get it me a link to ther Linkedin profile page. Your answer should contain only a URL
